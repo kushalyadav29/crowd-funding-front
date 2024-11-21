@@ -9,7 +9,7 @@ function Leaderboard() {
 
     const fetchData = async () => {
         try {
-            const response = await axios.get('http://localhost:4000/leaderboard'); // Match the backend route
+            const response = await axios.get('crowd-funding-back-production.up.railway.app/leaderboard'); // Match the backend route
             setLeaderboardData(response.data);
         } catch (error) {
             console.error('Error fetching leaderboard data:', error);

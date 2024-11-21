@@ -77,7 +77,7 @@ function App() {
 
     // Proceed with donation if validation passes
     try {
-      await axios.post("http://localhost:4000/donateAmount", {
+      await axios.post("crowd-funding-back-production.up.railway.app/donateAmount", {
         amount,
         Fname,
         Femail,
