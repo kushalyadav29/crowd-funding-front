@@ -9,7 +9,7 @@ function TreeCounter() {
   // Function to fetch tree count from the server
   const fetchTreeCount = async () => {
     try {
-      const response = await axios.get('crowd-funding-back-production.up.railway.app/treeCount');
+      const response = await axios.get('https://crowd-funding-back-production.up.railway.app/treeCount');
       setCount(response.data.treeCount); // Update state with the fetched count
     } catch (error) {
       console.error('Error fetching tree count:', error);

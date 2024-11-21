@@ -77,7 +77,7 @@ function App() {
 
     // Proceed with donation if validation passes
     try {
-      await axios.post("crowd-funding-back-production.up.railway.app/donateAmount", {
+      await axios.post("https://crowd-funding-back-production.up.railway.app/donateAmount", {
         amount,
         Fname,
         Femail,
